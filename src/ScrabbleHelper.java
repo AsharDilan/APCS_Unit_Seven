@@ -2,32 +2,31 @@ import javax.annotation.processing.Filer;
 import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ScrabbleHelper {
-    private ArrayList wordList;
-    public static void ScrabbleHelper() throws IOException{
-        Scanner scan = new Scanner(new File("files/enable.txt"));
-        FileWriter wordList = new FileWriter("enable.txt");
+    private ArrayList<String> wordList = new ArrayList<>();
+
+    public ScrabbleHelper() throws FileNotFoundException {
+        File file = new File("enable.txt");
+        Scanner scan = new Scanner(file);
+
+        while (scan.hasNextLine())
+            System.out.println(scan.nextLine());
     }
-    public ArrayList getWordList(){
-        return wordList;
+
+    public ArrayList getWordList() {
+
     }
-    public static String foundWord(String[] elements, String word);{
-        while (){
-            if (word = wordList)
-                return true;
-            else
-                return false;
-        }
+
+    public foundWord(){
+        Enter Binary Search
     }
-    public static String findMatches(String pattern){
+
+    public static String findMatches() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter a word pattern:");
-        String pattern = scan.nextLine();
-        for (int i = 0; i < pattern.length(), int x)
-
+        System.out.println("Please enter the word pattern: ");
+        Enter Linear Searche
     }
-
 }
-
