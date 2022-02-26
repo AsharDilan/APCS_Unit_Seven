@@ -1,8 +1,5 @@
-import javax.annotation.processing.Filer;
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ScrabbleHelper {
@@ -17,16 +14,15 @@ public class ScrabbleHelper {
     }
 
     public ArrayList getWordList() {
-
+        return wordList;
     }
 
-    public foundWord(){
-        Enter Binary Search
+    public void foundWord(String[] word){
+
     }
 
     public static String findMatches() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Please enter the word pattern: ");
-        Enter Linear Searche
+
+
     }
 }
