@@ -17,12 +17,28 @@ public class ScrabbleHelper {
         return wordList;
     }
 
-    public void foundWord(String[] word){
-
+    public void foundWord(String[] elements, String word) {
+        int left = 0;
+        int right = elements.length - 1;
+        while (left <= right) {
+            int middle = (left + right) / 2;
+            if (word.compareTo(elements[middle]) < 0) {
+            }
+            return true;
+        }
+        else if (word.compareTo(elements[middle]) > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    public static String findMatches() {
-
-
+    public void findMatches(String[] elements, String pattern) {
+        for (int j = 0; j < elements.length; j++) {
+            if (elements[j].equals(pattern)) {
+                return j;
+            }
+        }
     }
 }
+
